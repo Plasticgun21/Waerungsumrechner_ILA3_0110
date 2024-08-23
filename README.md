@@ -32,3 +32,19 @@
 | 6.1  | 6    | muss             | Als User möchte ich, dass die Applikation eine Benutzeroberfläche hat, damit ich Währungen auswählen kann. |
 | 7.1  | 7    | muss             | Als User möchte ich, dass die Applikation nicht neu starten muss um eine neu rechnung durchzuführen, damit ich keine Zeit verschwende. |
 | 8.1  | 8    | muss             | Als User möchte ich, dass die Applikation Fehlermeldungen anzeigt, damit ich meine Fehler korrigieren kann. |
+
+## 2. Planen
+
+### 2.1 Arbeitspakete
+
+| AP-№  | Zuständig  | Frist       | Beschreibung                                                                | Geplante Zeit |
+| ----- | ---------- | ----------- | --------------------------------------------------------------------------- | ------------- |
+| 1     | Jeanneret  | 23.8.24     | Erstellung des Projektantrag und Festlegung der Meilensteine/Ziele.         | 90 min        |
+| 2     | Jeanneret  | 23.8.24     | Anforderungen und User-storeis schreiben.                                   | 60 min        |
+| 3     | Jeanneret  | 23.8.24     | Arbeitspakete und Testfälle schreiben.                                      | 60 min        |
+| 4     | Jeanneret  | 30.8.24     | Design der Benutzeroberfläche und der Systemarchitektur erstellen.          | 180 min        |
+| 5     | Jeanneret  | 6.9.24      | Implementierung des Frontends.                                              | 180 min        |
+| 6     | Jeanneret  | 13.9.24     | Entwicklung und Integration des Backends und der API.                       | 180 min        |
+| 7     | Jeanneret  | 20.9.24     | Datenbankintegration durchführen (falls notwendig).                         | 180 min        |
+| 8     | Jeanneret  | 27.9.24     | Durchführung von Tests und Behebung von Fehlern.                            | 180 min        |
+| 9     | Jeanneret  | 1.11.24     | Fertigstellung der Dokumentation und Auswertung.                            | 180 min        |
