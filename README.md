@@ -48,3 +48,22 @@
 | 7     | Jeanneret  | 20.9.24     | Datenbankintegration durchführen (falls notwendig).                         | 180 min        |
 | 8     | Jeanneret  | 27.9.24     | Durchführung von Tests und Behebung von Fehlern.                            | 180 min        |
 | 9     | Jeanneret  | 1.11.24     | Fertigstellung der Dokumentation und Auswertung.                            | 180 min        |
+
+### 2.3 Testfälle
+
+| TC-№ | Ausgangslage                      | Eingabe                                               | Erwartete Ausgabe                                                |
+| ---- | --------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------- |
+| 1.1  | Applikation ist geöffnet          | Keine Eingabe                                        | Startbildschirm wird angezeigt.                                   |
+| 1.2  | Applikation ist geöffnet          | Währung auswählen und Betrag eingeben                | Die eingegebene Währung und Betrag werden korrekt angezeigt.      |
+| 1.3  | Applikation ist geöffnet          | Eine ungültige Währung eingeben                       | Fehlermeldung: „Ungültige Währung“                               |
+| 2.1  | Applikation ist geöffnet          | Wechselkurs-API ist aktiv                            | Aktuelle Wechselkurse werden angezeigt.                           |
+| 2.2  | Applikation ist geöffnet          | Eine gültige Währung eingeben, die nicht in der API enthalten ist | Fehlermeldung: „Daten nicht verfügbar“               |
+| 3.1  | Applikation ist geöffnet          | Betrag für eine Währung eingeben und auf „Berechnen“ klicken | Umgerechneter Betrag wird korrekt angezeigt.              |
+| 3.2  | Applikation ist geöffnet          | Einen sehr großen Betrag eingeben                    | Die Umrechnung erfolgt korrekt, keine Überlauf-Fehler.            |
+| 4.1  | Applikation ist geöffnet          | Eingabe von 0 als Betrag                             | Die Umrechnung zeigt „0“ als Ergebnis.                            |
+| 4.2  | Applikation ist geöffnet          | Mehrere Währungen nacheinander eingeben               | Jeder Wechselkurs wird korrekt umgerechnet und angezeigt.        |
+| 5.1  | Applikation ist geöffnet          | Eingaben in der UI ändern                             | UI aktualisiert sich entsprechend der neuen Eingaben.            |
+| 5.2  | Applikation ist geöffnet          | Falsche Eingaben machen und dann korrigieren         | Die Fehler werden behoben und die korrekte Ausgabe angezeigt.     |
+| 6.1  | Applikation ist geöffnet          | Applikation während einer Umrechnung schließen        | Die Umrechnung wird abgebrochen und es wird keine fehlerhafte Ausgabe angezeigt. |
+| 6.2  | Applikation ist geöffnet          | Neue Umrechnung nach einem API-Ausfall durchführen    | Die Umrechnung erfolgt nach der Wiederherstellung der API korrekt.|
+
