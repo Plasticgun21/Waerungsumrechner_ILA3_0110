@@ -20,6 +20,3 @@
 | 12   | Qualitativ    | Die Applikation soll mit verschiedenen Bildschirmgrößen und Auflösungen kompatibel sein. |
 | 13   | Qualitativ    | Die Anwendung soll schnelle Reaktionszeiten bei der Umrechnung bieten.            |
 | 14   | Randbedingung | Die Applikation muss in Python 3.8 oder höher lauffähig sein.                     |
-| 15   | Randbedingung | Die Applikation soll auf Windows, macOS und Linux-Betriebssystemen funktionieren. |
-| 16   | Randbedingung | Die API für Wechselkurse darf eine maximale Latenz von 2 Sekunden haben.          |
-| 17   | Randbedingung | Die Anwendung muss sicherstellen, dass keine sensiblen Benutzerdaten gespeichert werden. |
