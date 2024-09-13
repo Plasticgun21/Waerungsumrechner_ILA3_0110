@@ -8,9 +8,10 @@ def is_valid_currency_code(code):
 
 def currency_converter(api_key, base_currency, target_currency, amount):
     url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{base_currency}"
+
     try:
         response = requests.get(url)
-        response.raise_for_status()
+        response.raise_for_status()  
 
         data = response.json()
 
@@ -33,25 +34,21 @@ def currency_converter(api_key, base_currency, target_currency, amount):
     except Exception as err:
         return f"An unexpected error occurred: {err}"
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route("/", methods=["GET", "POST"])
 def index():
-    result = ""
-    if request.method == 'POST':
+    result = None
+    if request.method == "POST":
         api_key = "4ba72f3265f703a998baba49"  
-        base_currency = request.form.get('base_currency').upper()
-        target_currency = request.form.get('target_currency').upper()
-        try:
-            amount = float(request.form.get('amount'))
-        except ValueError:
-            result = "Invalid amount. Please enter a valid number."
-            return render_template('index.html', result=result)
+        base_currency = request.form.get("base_currency").upper()
+        target_currency = request.form.get("target_currency").upper()
+        amount = float(request.form.get("amount"))
 
-        if not is_valid_currency_code(base_currency) or not is_valid_currency_code(target_currency):
-            result = "Invalid currency code. Please enter three-letter currency codes like USD or EUR."
-        else:
+        if is_valid_currency_code(base_currency) and is_valid_currency_code(target_currency):
             result = currency_converter(api_key, base_currency, target_currency, amount)
+        else:
+            result = "Invalid currency code. Please enter a valid three-letter code like USD or EUR."
 
-    return render_template('index.html', result=result)
+    return render_template("index.html", result=result)
 
 if __name__ == "__main__":
     app.run(debug=True)
