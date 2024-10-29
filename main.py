@@ -1,45 +1,47 @@
 import requests
 
 def is_valid_currency_code(code):
+    """
+    Überprüft, ob der eingegebene Währungscode gültig ist (drei Buchstaben).
+    """
     return len(code) == 3 and code.isalpha()
 
 def currency_converter(api_key, base_currency, target_currency, amount):
-
+    """
+    Führt die Währungsumrechnung mithilfe der API durch und gibt das Ergebnis zurück.
+    """
     url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{base_currency}"
 
     try:
-
         response = requests.get(url)
-        response.raise_for_status()  
+        response.raise_for_status()  # Überprüft auf HTTP-Fehler
 
         data = response.json()
 
         if data.get("result") == "success":
-
             exchange_rates = data.get('conversion_rates')
-
+            
             if target_currency in exchange_rates:
-
                 exchange_rate = exchange_rates[target_currency]
-
                 converted_amount = amount * exchange_rate
-
-                print(f"{amount} {base_currency} is equal to {converted_amount:.2f} {target_currency}")
+                return f"{amount} {base_currency} is equal to {converted_amount:.2f} {target_currency}"
             else:
-                print(f"Currency '{target_currency}' not found in the exchange rates.")
+                return f"Currency '{target_currency}' not found in the exchange rates."
         else:
-            print(f"Error fetching data from API: {data.get('error-type')}")
+            return f"Error fetching data from API: {data.get('error-type')}"
 
     except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
+        return f"HTTP error occurred: {http_err}"
     except requests.exceptions.RequestException as req_err:
-        print(f"Request error occurred: {req_err}")
+        return f"Request error occurred: {req_err}"
     except Exception as err:
-        print(f"An unexpected error occurred: {err}")
+        return f"An unexpected error occurred: {err}"
 
 def main():
-
-    api_key = "4ba72f3265f703a998baba49"  
+    """
+    Hauptprogramm für Benutzereingaben und Umrechnung.
+    """
+    api_key = "4ba72f3265f703a998baba49"  # Dein API-Schlüssel
 
     while True:
         base_currency = input("Enter the base currency (e.g., CHF): ").upper()
@@ -62,7 +64,8 @@ def main():
         except ValueError:
             print("Invalid amount. Please enter a valid number.")
 
-    currency_converter(api_key, base_currency, target_currency, amount)
+    result = currency_converter(api_key, base_currency, target_currency, amount)
+    print(result)
 
 if __name__ == "__main__":
     main()
