@@ -14,7 +14,7 @@ def currency_converter(api_key, base_currency, target_currency, amount):
 
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Überprüft auf HTTP-Fehler
+        response.raise_for_status()  
 
         data = response.json()
 
@@ -41,7 +41,7 @@ def main():
     """
     Hauptprogramm für Benutzereingaben und Umrechnung.
     """
-    api_key = "4ba72f3265f703a998baba49"  # Dein API-Schlüssel
+    api_key = "4ba72f3265f703a998baba49"  
 
     while True:
         base_currency = input("Enter the base currency (e.g., CHF): ").upper()

@@ -12,9 +12,12 @@ def index():
         amount = float(request.form["amount"])
 
         if is_valid_currency_code(base_currency) and is_valid_currency_code(target_currency):
-            api_key = "4ba72f3265f703a998baba49"  # Dein API-Schlüssel
+            api_key = "4ba72f3265f703a998baba49" 
             result = currency_converter(api_key, base_currency, target_currency, amount)
         else:
             result = "Invalid currency codes provided."
 
     return render_template("index.html", result=result)
+
+if __name__ == '__main__':
+    app.run(debug=False)
