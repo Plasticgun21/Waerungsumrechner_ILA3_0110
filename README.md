@@ -70,8 +70,27 @@
 
 ## 3 Entscheiden
 
+
+### 3.1
+
 Ich habe mich entschieden das ich kein UI-Prototyp machen werde und mit dem Backend beginnen werde, weil der Code wird wahrscheinlich schwiriger sein als meine andere Projekte und ich muss Python dazu lernen.
 
 
 ## 4 Realisieren
+
+### 4.1 
+| AP-№ | Datum     | Zuständig        | geplante Zeit | tatsächliche Zeit |
+| ---- | --------- | ---------------- | ------------- | ----------------- |
+| 1    | 23.8.24   | Jeanneret| 90 min        |      90 min               |
+| 2    | 23.8.24   | Jeanneret| 60 min        |      60 min               |
+| 3    | 23.8.24   | Jeanneret| 60 min        |      60 min               |
+| 4    | n/a       | Jeanneret| 180 min       |      n/a              |
+| 5    | 20.9.24    | Jeanneret| 180 min       |      180 min              |
+| 6    | 30.8.24/6.9.24   | Jeanneret| 180 min       |      180 min              |
+| 7    | 13.9.24   | Jeanneret| 180 min       |      180 min              | 
+| 8    | 27.9.24    | Jeanneret| 180 min       |      180 min              |
+| 9    | 1.11.24   | Jeanneret| 180 min       |      180 min              |
+
+
+
 
