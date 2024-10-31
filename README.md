@@ -86,11 +86,33 @@ Ich habe mich entschieden das ich kein UI-Prototyp machen werde und mit dem Back
 | 3    | 23.8.24   | Jeanneret| 60 min        |      60 min               |
 | 4    | n/a       | Jeanneret| 180 min       |      n/a              |
 | 5    | 20.9.24    | Jeanneret| 180 min       |      180 min              |
-| 6    | 30.8.24/6.9.24   | Jeanneret| 180 min       |      180 min              |
+| 6    | 30.8.24/6.9.24   | Jeanneret| 180 min |      360 min              |
 | 7    | 13.9.24   | Jeanneret| 180 min       |      180 min              | 
 | 8    | 27.9.24    | Jeanneret| 180 min       |      180 min              |
 | 9    | 1.11.24   | Jeanneret| 180 min       |      180 min              |
 
 
+## 5. Kontrollieren
 
+### 5.1 Testprotokolle
+
+| TC-№ | Ergebnis        | Bemerkungen                                           |
+| ---- | --------------- | ----------------------------------------------------- |
+| 1.1  | Bestanden       | Applikation öffnet sich problemlos.                   |
+| 1.2  | Bestanden       | Die eingegebene Währung und Betrag wird korrekt angezeigt. |
+| 1.3  | Bestanden       | Fehlermeldung wird angezeigt                  |
+| 2.1  | Nicht Bestanden | Wurde nicht implementiert.               |
+| 2.2  | Bestanden       | Fehlermeldung wird angezeigt.             |
+| 3.1  | Bestanden       | Umgerechneter Betrag wird korrekt angezeigt.               |
+| 3.2  | Bestanden       | Die Umrechnung erfolgt korrekt.     |
+| 4.1  | Bestanden       | Die Umrechnung zeigt „0“.        |
+| 4.2  | Bestanden       | Jeder Wechselkurs wird korrekt umgerechnet und angezeigt.|
+| 5.1  | Bestanden       | UI aktualisiert sich entsprechend der neuen Eingaben.|
+| 5.2  | Bestanden       | Fehlermeldung und man konnte die Eingabe korrigieren.       |
+| 6.1  | Nicht Bestanden | Wurde nicht richtig implementiert und wurde entfernt.|
+| 6.2  | Nicht Bestanden | Wurde nicht richtig implementiert und wurde entfernt.|
+
+### 5.2 Testbericht
+
+Die Applikation läuft derzeit stabil und ohne nennenswerte Probleme. Dadurch ist nun Raum für weitere Funktionserweiterungen gegeben, die den Nutzen der Applikation steigern könnten. Mit zusätzlichen Ressourcen und Zeit kann das System schrittweise um neue Features ergänzt und weiter optimiert werden, um noch mehr Benutzerfreundlichkeit und Funktionalität zu bieten.
 
