@@ -67,3 +67,11 @@
 | 6.1  | Applikation ist geöffnet          | Applikation während einer Umrechnung schließen        | Die Umrechnung wird abgebrochen und es wird keine fehlerhafte Ausgabe angezeigt. |
 | 6.2  | Applikation ist geöffnet          | Neue Umrechnung nach einem API-Ausfall durchführen    | Die Umrechnung erfolgt nach der Wiederherstellung der API korrekt.|
 
+
+## 3 Entscheiden
+
+Ich habe mich entschieden das ich kein UI-Prototyp machen werde und mit dem Backend beginnen werde, weil der Code wird wahrscheinlich schwiriger sein als meine andere Projekte und ich muss Python dazu lernen.
+
+
+## 4 Realisieren
+
