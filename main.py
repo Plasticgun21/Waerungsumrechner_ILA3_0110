@@ -1,15 +1,11 @@
 import requests
 
 def is_valid_currency_code(code):
-    """
-    Überprüft, ob der eingegebene Währungscode gültig ist (drei Buchstaben).
-    """
+    
     return len(code) == 3 and code.isalpha()
 
 def currency_converter(api_key, base_currency, target_currency, amount):
-    """
-    Führt die Währungsumrechnung mithilfe der API durch und gibt das Ergebnis zurück.
-    """
+    
     url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{base_currency}"
 
     try:
@@ -38,9 +34,7 @@ def currency_converter(api_key, base_currency, target_currency, amount):
         return f"An unexpected error occurred: {err}"
 
 def main():
-    """
-    Hauptprogramm für Benutzereingaben und Umrechnung.
-    """
+    
     api_key = "4ba72f3265f703a998baba49"  
 
     while True:
